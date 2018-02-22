@@ -19,8 +19,8 @@ public class Snatch {
     */
     typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
 
-    init(with session: URLSession = URLSession.shared) {
-        self.session = session
+    init(with sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default) {
+        self.session = URLSession(configuration: sessionConfig)
         // Give a reference to a Snatch instance to all the extensions.
         get.father = self
     }
