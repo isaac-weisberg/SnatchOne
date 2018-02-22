@@ -5,4 +5,11 @@
 */
 enum SnatchError: Error {
     case spooks
+
+    var localizedDescription: String {
+        switch self {
+        case .spooks:
+            return "Internal error"
+        }
+    }
 }
