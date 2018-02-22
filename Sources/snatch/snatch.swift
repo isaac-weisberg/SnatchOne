@@ -1,3 +1,3 @@
-struct snatch {
-    var text = "Hello, World!"
+public class Snatch {
+    static let shared = Snatch()
 }
