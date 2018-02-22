@@ -16,15 +16,10 @@ extension Snatch {
             - returns: Promise that fulfills with Snatch.Result object.
         */
         subscript(_ url: URL) -> Promise<Result> {
-            return Promise {[weak self] fulfill, reject in
-                guard let father = self?.father else {
-                    reject(SnatchError.spooks)
-                    return
-                }
-                let handler = father.commonHandler(fulfill, reject)
-
-                father.task(with: url, handler).resume()
+            guard let father = self.father else {
+                return Promise(error: SnatchError.spooks)
             }
+            return father.request(url)
         }
     }
 }
