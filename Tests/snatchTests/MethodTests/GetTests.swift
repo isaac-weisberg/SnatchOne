@@ -10,7 +10,7 @@ class GetTests: XCTestCase {
             return
         }
         
-        Snatch.shared.get(url)
+        Snatch.shared.get[ url ]
         .then { result in
             XCTAssert(result.response.statusCode == 200, "Should be equal to 200.")
             exp.fulfill()

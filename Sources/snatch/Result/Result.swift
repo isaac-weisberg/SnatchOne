@@ -3,7 +3,7 @@ import Foundation
 /**
     Exists to collate results of an HTTP request into a single entity.
 */
-class Response {
+class Result {
     /**
         Raw body of the response.
     */
