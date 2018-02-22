@@ -5,7 +5,9 @@ import Foundation
     This extension adds capability to perform get requests.
 */
 extension Snatch {
-    class Get {
+    class Get: SnatchModule {
+        weak var father: Snatch?
+
         /**
             Starts a data task on a shared URLSession, resolves upon completion.
 
@@ -14,18 +16,14 @@ extension Snatch {
             - returns: Promise that fulfills with Snatch.Result object.
         */
         subscript(_ url: URL) -> Promise<Result> {
-            return Promise { fulfill, reject in
-                let handler = Snatch.shared.commonHandler(fulfill, reject)
+            return Promise {[weak self] fulfill, reject in
+                guard let father = self?.father else {
+                    reject(SnatchError.spooks)
+                    return
+                }
+                let handler = father.commonHandler(fulfill, reject)
 
-                Snatch.shared.task(with: url, handler).resume()
-            }
-        }
-
-        subscript(request: URLRequest) -> Promise<Result> {
-            return Promise { fulfill, reject in
-                let handler = Snatch.shared.commonHandler(fulfill, reject)
-
-                Snatch.shared.task(with: request, handler).resume()
+                father.task(with: url, handler).resume()
             }
         }
     }
