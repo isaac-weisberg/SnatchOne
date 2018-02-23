@@ -54,5 +54,9 @@ extension Snatch {
 
             return self[ newURL ]
         }
+
+        subscript(_ url: URL, _ params: [AnyHashable: Any]?, _ headers: [String: String]) -> Promise<Result> {
+            return SnatchError.spooks.promised
+        }
     }
 }
