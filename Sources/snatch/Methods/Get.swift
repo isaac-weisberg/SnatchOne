@@ -32,7 +32,7 @@ extension Snatch {
         */
         subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
             let encoder = URLQueryEncoding()
-            let query = encoder.encode(params)
+            // let query = encoder.encode(params)
 
             // guard let components = url.components else {
             //     return SnatchError.spooks.promised
@@ -44,7 +44,11 @@ extension Snatch {
             //     return SnatchError.spooks.promised
             // }
 
-            guard let newURL = encoder.swapQuery(of: url, with: query) else {
+            // guard let newURL = encoder.swapQuery(of: url, with: query) else {
+            //     return SnatchError.spooks.promised
+            // }
+
+            guard let newURL = encoder.swapQuery(of: url, with: params) else {
                 return SnatchError.spooks.promised
             }
 
