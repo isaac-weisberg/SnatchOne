@@ -16,7 +16,7 @@ extension Snatch {
             - returns: Promise that fulfills with Snatch.Result object.
         */
         subscript(_ url: URL) -> Promise<Result> {
-            guard let father = self.father else {
+            guard let father = father else {
                 return SnatchError.spooks.promised
             }
             return father.request(url)
@@ -55,8 +55,38 @@ extension Snatch {
             return self[ newURL ]
         }
 
+        /**
+            Encodes parameters if present into url and performs a request using them HTTP headers
+
+            - parameter url: url of a remote endpoint, preferably with http/https protocol.
+            - parameter params: parameters that will be URL encoded into the request. They will be encoded specifically right into a query of a URL, not the body of the HTTP request.
+            - parameter headers: headers dictionary to be used in the request.
+
+            - returns: Promise that fulfills with Snatch.Result object.
+        */
         subscript(_ url: URL, _ params: [AnyHashable: Any]?, _ headers: [String: String]) -> Promise<Result> {
-            return SnatchError.spooks.promised
+            guard let father = father else {
+                return SnatchError.spooks.promised
+            }
+
+            let newUrl: URL
+            if let parameters = params {
+                let encoder = URLQueryEncoding()
+
+                guard let urlWithUpdateQuery = encoder.swapQuery(of: url, with: parameters) else {
+                    return SnatchError.spooks.promised
+                }
+
+                newUrl = urlWithUpdateQuery
+            } else {
+                newUrl = url
+            }
+
+            var request = URLRequest(url: newUrl)
+
+            request.allHTTPHeaderFields = headers
+
+            return father.request(request)
         }
     }
 }
