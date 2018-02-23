@@ -23,6 +23,11 @@ class GetTests: XCTestCase {
         waitForExpectations(timeout: 20.0)
     }
 
+    /*
+        There should be a test of a request with URLEncoded parameters, but you know an echo website? cuz I don't
+        so i can't really think of how am I supposed to test it out...
+    */
+
     static var allTests = [
         ("testGetDownload", testGetDownload),
     ]
