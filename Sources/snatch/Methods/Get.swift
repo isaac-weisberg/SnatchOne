@@ -26,7 +26,6 @@ extension Snatch {
             Encodes parameters into the URL, overriding whatever query it was carrying and resolves upon completion of a request.
 
             - parameter url: url of a remote endpoint, preferably with http/https protocol.
-
             - parameter params: parameters that will be URL encoded into the request. They will be encoded specifically right into a query of a URL, not the body of the HTTP request.
 
             - returns: Promise that fulfills with Snatch.Result object.
@@ -35,13 +34,17 @@ extension Snatch {
             let encoder = URLQueryEncoding()
             let query = encoder.encode(params)
 
-            guard let components = url.components else {
-                return SnatchError.spooks.promised
-            }
+            // guard let components = url.components else {
+            //     return SnatchError.spooks.promised
+            // }
 
-            components.query = query
+            // components.query = query
 
-            guard let newURL = components.url else {
+            // guard let newURL = components.url else {
+            //     return SnatchError.spooks.promised
+            // }
+
+            guard let newURL = encoder.swapQuery(of: url, with: query) else {
                 return SnatchError.spooks.promised
             }
 
