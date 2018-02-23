@@ -35,4 +35,17 @@ class URLQueryEncoding {
 
         return newURL
     }
+
+    /**
+        Overrides the query of a url with the parameters dictionary encoded in URLEncoding query.
+
+        - parameter url: the source url.
+        - parameter parameters: dictionary of parameters.
+
+        - returns: a new url with a new query.
+    */
+    func swapQuery(of url: URL, with parameters: [AnyHashable: Any]) -> URL? {
+        let query = encode(parameters)
+        return swapQuery(of: url, with: query)
+    }
 }
