@@ -38,11 +38,9 @@ extension Snatch {
         }
 
         func apply(_ parameters: [String: Encodable], to request: inout URLRequest) throws {
-            let encoder = JSONEncoder()
+            let encoder = JSONBodyEncoding()
 
-            let data = try encoder.encode(parameters)
-
-            request.httpBody = data
+            try encoder.apply(parameters, to: &request)
         }
     }
 }
