@@ -37,7 +37,7 @@ extension Snatch {
             return request
         }
 
-        func apply(_ parameters: [String: Encodable], to request: inout URLRequest) throws {
+        func apply<Parameters: Encodable>(_ parameters: Parameters, to request: inout URLRequest) throws {
             let encoder = JSONBodyEncoding()
 
             try encoder.apply(parameters, to: &request)

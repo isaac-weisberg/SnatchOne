@@ -5,4 +5,5 @@ XCTMain([
     testCase(GeneralTests.allTests),
     testCase(GetTests.allTests),
     testCase(URLQueryEncodingTests.allTests),
+    testCase(JSONBodyEncodingTests.allTests),
 ])
