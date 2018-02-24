@@ -4,4 +4,5 @@ import XCTest
 XCTMain([
     testCase(GeneralTests.allTests),
     testCase(GetTests.allTests),
+    testCase(URLQueryEncodingTests.allTests),
 ])

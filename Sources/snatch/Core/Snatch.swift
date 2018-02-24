@@ -19,10 +19,25 @@ public class Snatch {
     */
     typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
 
-    init(with session: URLSession = URLSession.shared) {
-        self.session = session
+    init(with sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default) {
+        self.session = URLSession(configuration: sessionConfig)
         // Give a reference to a Snatch instance to all the extensions.
         get.father = self
+    }
+
+    /**
+        Starts a data task on a shared URLSession, resolves upon completion.
+
+        - parameter url: URL. Default headers, empty body, if you really want, put url encoded query there yourself.
+
+        - returns: Promise that fulfills with Snatch.Result object.
+    */
+    func request(_ url: URL) -> Promise<Result> {
+        return Promise { fulfill, reject in
+            let handler = self.commonHandler(fulfill, reject)
+
+            self.task(with: url, handler).resume()
+        }
     }
 
     /**

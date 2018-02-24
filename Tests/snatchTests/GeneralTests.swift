@@ -19,7 +19,7 @@ class GeneralTests: XCTestCase {
             exp.fulfill()
         }
         .catch { error in
-            XCTFail("Should've not thrown")
+            XCTFail("Should've not thrown \(error)")
             exp.fulfill()
         }
 
