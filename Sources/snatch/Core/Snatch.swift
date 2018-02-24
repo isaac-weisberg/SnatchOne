@@ -15,6 +15,11 @@ public class Snatch {
     let get = Get()
 
     /**
+        A reference to a Post module.
+    */
+    let post = Post()
+
+    /**
         A handler type used for dataTask completion on URLSession.
     */
     typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
@@ -23,6 +28,7 @@ public class Snatch {
         self.session = URLSession(configuration: sessionConfig)
         // Give a reference to a Snatch instance to all the extensions.
         get.father = self
+        post.father = self
     }
 
     /**
