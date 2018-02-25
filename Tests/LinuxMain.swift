@@ -2,5 +2,9 @@ import XCTest
 @testable import snatchTests
 
 XCTMain([
-    testCase(snatchTests.allTests),
+    testCase(GeneralTests.allTests),
+    testCase(GetTests.allTests),
+    testCase(PostTests.allTests),
+    testCase(URLQueryEncodingTests.allTests),
+    testCase(JSONBodyEncodingTests.allTests),
 ])
