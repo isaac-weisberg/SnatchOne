@@ -52,7 +52,7 @@ extension Snatch {
                 return SnatchError.spooks.promised
             }
 
-            return self[ newURL ]
+            return self [ newURL ]
         }
 
         /**
