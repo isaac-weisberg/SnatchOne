@@ -5,11 +5,14 @@
 */
 enum SnatchError: Error {
     case spooks
+    case encoding(Error)
 
     var localizedDescription: String {
         switch self {
         case .spooks:
             return "Internal error"
+        case .encoding(let underlyingError):
+            return "Encoding error: \(underlyingError)"
         }
     }
 }

@@ -13,7 +13,6 @@ class URLQueryEncoding {
         return dict.map { "\($0)=\($1)" }.joined(separator: "&")
     }
 
-
     /**
         Overrides the query of a url with the contents of query parameter.
 
