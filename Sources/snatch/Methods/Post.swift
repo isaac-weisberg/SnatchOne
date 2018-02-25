@@ -61,8 +61,10 @@ extension Snatch {
             var request = generateRequest(outOf: url, headers)
 
             if let parameters = parameters {
+                let encoder = JSONBodyEncoding()
+
                 do {
-                    try apply(parameters, to: &request)
+                    try encoder.apply(parameters, to: &request)
                 } catch {
                     return SnatchError.encoding(error).promised
                 }
@@ -81,12 +83,6 @@ extension Snatch {
             }
 
             return request
-        }
-
-        func apply<Parameters: Encodable>(_ parameters: Parameters, to request: inout URLRequest) throws {
-            let encoder = JSONBodyEncoding()
-
-            try encoder.apply(parameters, to: &request)
         }
     }
 }
