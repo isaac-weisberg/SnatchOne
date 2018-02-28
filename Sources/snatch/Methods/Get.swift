@@ -4,9 +4,9 @@ import Foundation
 /**
     This extension adds capability to perform get requests.
 */
-extension Snatch {
-    class Get: SnatchModule {
-        weak var father: Snatch?
+public extension Snatch {
+    public class Get: SnatchModule {
+        weak public var father: Snatch?
 
         /**
             Starts a data task on a URLSession, resolves upon completion.
@@ -15,7 +15,7 @@ extension Snatch {
 
             - returns: Promise that fulfills with Snatch.Result object.
         */
-        subscript(_ url: URL) -> Promise<Result> {
+        public subscript(_ url: URL) -> Promise<Result> {
             guard let father = father else {
                 return SnatchError.spooks.promised
             }
@@ -30,7 +30,7 @@ extension Snatch {
 
             - returns: Promise that fulfills with Snatch.Result object.
         */
-        subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
+        public subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
             let encoder = URLQueryEncoding()
             // let query = encoder.encode(params)
 
@@ -64,7 +64,7 @@ extension Snatch {
 
             - returns: Promise that fulfills with Snatch.Result object.
         */
-        subscript(_ url: URL, _ params: [AnyHashable: Any]?, _ headers: [String: String]) -> Promise<Result> {
+        public subscript(_ url: URL, _ params: [AnyHashable: Any]?, _ headers: [String: String]) -> Promise<Result> {
             guard let father = father else {
                 return SnatchError.spooks.promised
             }

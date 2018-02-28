@@ -3,16 +3,16 @@ import Foundation
 /**
     Exists to collate results of an HTTP request into a single entity.
 */
-class Result {
+public class Result {
     /**
         Raw body of the response.
     */
-    let data: Data?
+    public let data: Data?
 
     /**
         URLSessions' response object.
     */
-    let response: HTTPURLResponse
+    public let response: HTTPURLResponse
 
     init(from response: HTTPURLResponse, _ data: Data? = nil) {
         self.response = response

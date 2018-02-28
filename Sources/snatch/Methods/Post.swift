@@ -4,9 +4,9 @@ import Foundation
 /**
     This extension adds capability to perform post requests.
 */
-extension Snatch {
-    class Post: SnatchModule {
-        weak var father: Snatch?
+public extension Snatch {
+    public class Post: SnatchModule {
+        weak public var father: Snatch?
 
         /**
             Sends an empty body, no headers, POST request directly at URL.
@@ -27,7 +27,7 @@ extension Snatch {
 
             - returns: Promise that fulfills with Snatch.Result object.
         */
-        subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters) -> Promise<Result> {
+        public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters) -> Promise<Result> {
             return self [ url, parameters, nullableHeaders: nil ]
         }
 
@@ -40,7 +40,7 @@ extension Snatch {
 
             - returns: Promise that fulfills with Snatch.Result object.
         */
-        subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]) -> Promise<Result> {
+        public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]) -> Promise<Result> {
             return self [ url, parameters, headers ]
         }
 

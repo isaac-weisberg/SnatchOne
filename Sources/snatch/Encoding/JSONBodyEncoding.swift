@@ -1,6 +1,6 @@
 import Foundation
 
-class JSONBodyEncoding {
+public class JSONBodyEncoding {
     let encoder = JSONEncoder()
 
     func encode<Parameters: Encodable>(_ parameters: Parameters) throws -> Data {

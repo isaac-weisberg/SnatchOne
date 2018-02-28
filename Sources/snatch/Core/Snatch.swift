@@ -2,29 +2,29 @@ import Foundation
 import Promise
 
 public class Snatch {
-    static let shared = Snatch()
+    public static let shared = Snatch()
 
     /**
         The underlying URLSession object.
     */
-    let session: URLSession
+    public let session: URLSession
 
     /**
         A reference to a Get module.
     */
-    let get = Get()
+    public let get = Get()
 
     /**
         A reference to a Post module.
     */
-    let post = Post()
+    public let post = Post()
 
     /**
         A handler type used for dataTask completion on URLSession.
     */
-    typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
+    public typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
 
-    init(with sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default) {
+    public init(with sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default) {
         self.session = URLSession(configuration: sessionConfig)
         // Give a reference to a Snatch instance to all the extensions.
         get.father = self
@@ -38,7 +38,7 @@ public class Snatch {
 
         - returns: Promise that fulfills with Snatch.Result object.
     */
-    func request(_ url: URL) -> Promise<Result> {
+    public func request(_ url: URL) -> Promise<Result> {
         return Promise { fulfill, reject in
             let handler = self.commonHandler(fulfill, reject)
 
@@ -53,7 +53,7 @@ public class Snatch {
 
         - returns: Promise that fulfills with Snatch.Result object.
     */
-    func request(_ request: URLRequest) -> Promise<Result> {
+    public func request(_ request: URLRequest) -> Promise<Result> {
         return Promise { fulfill, reject in
             let handler = self.commonHandler(fulfill, reject)
 
@@ -69,7 +69,7 @@ public class Snatch {
 
         - returns: URLSessionDataTask, the data task that needs to be resumed in order to be started.
     */
-    func task(with url: URL, _ handler: @escaping DataTaskCallback) -> URLSessionDataTask {
+    internal func task(with url: URL, _ handler: @escaping DataTaskCallback) -> URLSessionDataTask {
         return session.dataTask(with: url, completionHandler: handler)
     }
 
@@ -81,7 +81,7 @@ public class Snatch {
 
         - returns: URLSessionDataTask, the data task that needs to be resumed in order to be started.
     */
-    func task(with request: URLRequest, _ handler: @escaping DataTaskCallback) -> URLSessionDataTask {
+    internal func task(with request: URLRequest, _ handler: @escaping DataTaskCallback) -> URLSessionDataTask {
         return session.dataTask(with: request, completionHandler: handler)
     }
 
@@ -93,7 +93,7 @@ public class Snatch {
 
         - returns: DataTaskCallback, i.e. a closure that is meant to be called by URLSessionDataTask upon completion :)
     */
-    func commonHandler(_ fulfill: @escaping (Result) -> (), _ reject: @escaping (Error) -> ()) -> DataTaskCallback {
+    internal func commonHandler(_ fulfill: @escaping (Result) -> (), _ reject: @escaping (Error) -> ()) -> DataTaskCallback {
         return { data, response, error in
             if let error = error {
                 reject(error)

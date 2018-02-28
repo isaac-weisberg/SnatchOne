@@ -1,6 +1,6 @@
 import Foundation
 
-class URLQueryEncoding {
+public class URLQueryEncoding {
 
     /**
         Encodes a dictionary of parameters into a URLEncoded query. Expects all members to be escaped.

@@ -3,7 +3,7 @@
 
    - spooks: things that don't make no sense. Usually is to be treated as internal error.
 */
-enum SnatchError: Error {
+public enum SnatchError: Error {
     case spooks
     case encoding(Error)
 
