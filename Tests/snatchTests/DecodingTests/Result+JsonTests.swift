@@ -8,6 +8,17 @@ class JSONDecodingForResultTests: XCTestCase {
         var lastName: String
     }
 
+    let goodData: Data = """
+{
+    "name": "John",
+    "lastName": "Fucks"
+}
+""".data(using: .utf8)!
+
+    lazy var goodResponse = HTTPURLResponse(url: genericURL, statusCode: 200, httpVersion: nil, headerFields: nil)!
+
+    let genericURL = URL(string: "https://apple.com/someresource")!
+
     func testValidJSONPayload() {
         let response = goodResponse
         let data = goodData
@@ -25,22 +36,29 @@ class JSONDecodingForResultTests: XCTestCase {
             exp.fulfill()
         }
 
+        waitForExpectations(timeout: 20.0)
+    }
+
+    func testNoPayloadDecoding() {
+        let response = goodResponse
+        let result = Result(from: response, nil)
+
+        let exp = expectation(description: "Should reject cause body nil")
+
+        result.json(ResultTargetType.self).then { user in
+            XCTFail("Should've rejected cause no body.")
+        }.catch { err in
+            XCTAssert(err is Result.NoBodyError, "Should've thrown NoBodyError")
+        }.always {
+            exp.fulfill()
+        }
 
         waitForExpectations(timeout: 20.0)
     }
 
-    let goodData: Data = """
-{
-    "name": "John",
-    "lastName": "Fucks"
-}
-""".data(using: .utf8)!
-
-    lazy var goodResponse = HTTPURLResponse(url: genericURL, statusCode: 200, httpVersion: nil, headerFields: nil)!
-
-    let genericURL = URL(string: "https://apple.com/someresource")!
 
     static var allTests = [
         ("testValidJSONPayload", testValidJSONPayload),
+        ("testNoPayloadDecoding", testNoPayloadDecoding),
     ]
 }
