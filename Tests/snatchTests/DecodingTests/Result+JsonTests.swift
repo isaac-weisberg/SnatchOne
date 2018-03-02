@@ -56,9 +56,28 @@ class JSONDecodingForResultTests: XCTestCase {
         waitForExpectations(timeout: 20.0)
     }
 
+    func testPayloadThatWouldntBeParsed() {
+        let response = goodResponse
+        let failishData = "savhnqeirhg9qrg5ouh345uhq24-85gh-    1348tg4-g3".data(using: .utf8)!
+        let result = Result(from: response, failishData)
+
+        let exp = expectation(description: "Should reject cause body is gibberish")
+
+        result.json(ResultTargetType.self).then { user in
+            XCTFail("Should've rejected cause the body is supposed to be garbage.")
+        }.catch { err in
+            XCTAssertFalse(err is Result.NoBodyError, "Should've not even been NoBodyError")
+        }.always {
+            exp.fulfill()
+        }
+
+        waitForExpectations(timeout: 20.0)
+    }
+
 
     static var allTests = [
         ("testValidJSONPayload", testValidJSONPayload),
         ("testNoPayloadDecoding", testNoPayloadDecoding),
+        ("testPayloadThatWouldntBeParsed", testPayloadThatWouldntBeParsed),
     ]
 }
