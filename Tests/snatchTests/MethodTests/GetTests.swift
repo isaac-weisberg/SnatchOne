@@ -13,10 +13,10 @@ class GetTests: XCTestCase {
         Snatch.shared.get[ url ]
         .then { result in
             XCTAssert(result.response.statusCode == 200, "Should be equal to 200.")
-            exp.fulfill()
         }
         .catch { error in
             XCTFail("Should've not thrown \(error)")
+        }.always {
             exp.fulfill()
         }
 
