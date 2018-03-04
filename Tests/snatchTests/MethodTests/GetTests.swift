@@ -23,6 +23,17 @@ class GetTests: XCTestCase {
         waitForExpectations(timeout: 20.0)
     }
 
+    func testURLRequestCreation() {
+        guard let url = URL(string: "https://apple.com/") else {
+            XCTFail("Should've created url to a remote source.")
+            return
+        }
+
+        let req = URLRequest(url: url)
+
+        XCTAssert(req.httpMethod == "GET", "Should be get by default")
+    }
+
     /*
         There should be a test of a request with URLEncoded parameters, but you know an echo website? cuz I don't
         so i can't really think of how am I supposed to test it out...
@@ -30,5 +41,6 @@ class GetTests: XCTestCase {
 
     static var allTests = [
         ("testGetDownload", testGetDownload),
+        ("testURLRequestCreation", testURLRequestCreation),
     ]
 }
