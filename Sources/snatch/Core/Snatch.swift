@@ -34,21 +34,6 @@ public class Snatch {
     /**
         Starts a data task on a shared URLSession, resolves upon completion.
 
-        - parameter url: URL. Default headers, empty body, if you really want, put url encoded query there yourself.
-
-        - returns: Promise that fulfills with Snatch.Result object.
-    */
-    public func request(_ url: URL) -> Promise<Result> {
-        return Promise { fulfill, reject in
-            let handler = self.commonHandler(fulfill, reject)
-
-            self.task(with: url, handler).resume()
-        }
-    }
-
-    /**
-        Starts a data task on a shared URLSession, resolves upon completion.
-
         - parameter request: URLRequest. Use this object to configure methods, headers and all the things.
 
         - returns: Promise that fulfills with Snatch.Result object.
@@ -59,18 +44,6 @@ public class Snatch {
 
             self.task(with: request, handler).resume()
         }
-    }
-
-    /**
-        Creates a data task out of an arbitrary url and DataTaskCallback
-
-        - parameter url: a url to a remote resourse. URLEncoded query is users' concern.
-        - parameter handler: completion handler for the data task
-
-        - returns: URLSessionDataTask, the data task that needs to be resumed in order to be started.
-    */
-    internal func task(with url: URL, _ handler: @escaping DataTaskCallback) -> URLSessionDataTask {
-        return session.dataTask(with: url, completionHandler: handler)
     }
 
     /**
