@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A099888A2047B121008889F6 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Promises::Promise::Product" /* Promise.framework */; };
 		A099888B2047B1BA008889F6 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Snatch.swift */; };
 		A099888C2047B1BA008889F6 /* SnatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SnatchModule.swift */; };
 		A099888D2047B1BA008889F6 /* JSONBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* JSONBodyEncoding.swift */; };
@@ -23,22 +22,10 @@
 		OBJ_64 /* GeneralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* GeneralTests.swift */; };
 		OBJ_65 /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* GetTests.swift */; };
 		OBJ_66 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* PostTests.swift */; };
-		OBJ_69 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Promises::Promise::Product" /* Promise.framework */; };
-		OBJ_95 /* Promise+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Promise+Extras.swift */; };
-		OBJ_96 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Promise.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A099887A2047B0A4008889F6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Promises::Promise";
-			remoteInfo = Promise;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		A0477E6A204BC7C400D818EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SnatchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnatchModule.swift; sourceTree = "<group>"; };
@@ -55,13 +42,7 @@
 		OBJ_30 /* GeneralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTests.swift; sourceTree = "<group>"; };
 		OBJ_32 /* GetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
 		OBJ_33 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
-		OBJ_34 /* Snatch */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Snatch; sourceTree = SOURCE_ROOT; };
-		OBJ_38 /* Promise+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Promise+Extras.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/isaac_weisberg/Projects/pobj/pobj/Pobjects/Submodules/snatch/.build/checkouts/Promise.git-623092079204635683/Package.swift"; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"Promises::Promise::Product" /* Promise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Promise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"snatch::snatchTests::Product" /* snatchTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = snatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"snatch::snatchTests::Product" /* snatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = snatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,19 +50,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A099888A2047B121008889F6 /* Promise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		OBJ_67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_69 /* Promise.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_97 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -178,38 +150,10 @@
 			path = MethodTests;
 			sourceTree = "<group>";
 		};
-		OBJ_35 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_36 /* Promises */,
-			);
-			name = Dependencies;
-			sourceTree = "<group>";
-		};
-		OBJ_36 /* Promises */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_37 /* Promise */,
-				OBJ_40 /* Package.swift */,
-			);
-			name = Promises;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_37 /* Promise */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_38 /* Promise+Extras.swift */,
-				OBJ_39 /* Promise.swift */,
-			);
-			name = Promise;
-			path = ".build/checkouts/Promise.git-623092079204635683/Promise";
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"snatch::snatchTests::Product" /* snatchTests.xctest */,
-				"Promises::Promise::Product" /* Promise.framework */,
 				A09988812047B114008889F6 /* Snatch.framework */,
 			);
 			name = Products;
@@ -218,11 +162,8 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_25 /* Tests */,
-				OBJ_34 /* Snatch */,
-				OBJ_35 /* Dependencies */,
 				OBJ_41 /* Products */,
 				A09988892047B121008889F6 /* Frameworks */,
 			);
@@ -239,6 +180,7 @@
 		OBJ_8 /* snatch */ = {
 			isa = PBXGroup;
 			children = (
+				A0477E6A204BC7C400D818EF /* Info.plist */,
 				OBJ_9 /* Core */,
 				OBJ_12 /* Encoding */,
 				OBJ_15 /* Error */,
@@ -290,25 +232,9 @@
 			productReference = A09988812047B114008889F6 /* Snatch.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"Promises::Promise" /* Promise */ = {
+		"snatch::snatchTests" /* SnatchTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "Promise" */;
-			buildPhases = (
-				OBJ_94 /* Sources */,
-				OBJ_97 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Promise;
-			productName = Promise;
-			productReference = "Promises::Promise::Product" /* Promise.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"snatch::snatchTests" /* snatchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "snatchTests" */;
+			buildConfigurationList = OBJ_58 /* Build configuration list for PBXNativeTarget "SnatchTests" */;
 			buildPhases = (
 				OBJ_61 /* Sources */,
 				OBJ_67 /* Frameworks */,
@@ -316,9 +242,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_72 /* PBXTargetDependency */,
 			);
-			name = snatchTests;
+			name = SnatchTests;
 			productName = snatchTests;
 			productReference = "snatch::snatchTests::Product" /* snatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -337,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "snatch" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Snatch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -349,8 +274,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"snatch::snatchTests" /* snatchTests */,
-				"Promises::Promise" /* Promise */,
+				"snatch::snatchTests" /* SnatchTests */,
 				A09988802047B114008889F6 /* Snatch */,
 			);
 		};
@@ -396,24 +320,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_94 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_95 /* Promise+Extras.swift in Sources */,
-				OBJ_96 /* Promise.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		OBJ_72 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Promises::Promise" /* Promise */;
-			targetProxy = A099887A2047B0A4008889F6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A09988872047B114008889F6 /* Debug */ = {
@@ -466,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Snatch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/snatch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -529,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Snatch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/snatch/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -624,54 +531,6 @@
 			};
 			name = Release;
 		};
-		OBJ_92 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = snatch.xcodeproj/Promise_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Promise;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Promise;
-			};
-			name = Debug;
-		};
-		OBJ_93 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = snatch.xcodeproj/Promise_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = Promise;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = Promise;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,7 +543,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "snatch" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "Snatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
@@ -693,20 +552,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_58 /* Build configuration list for PBXNativeTarget "snatchTests" */ = {
+		OBJ_58 /* Build configuration list for PBXNativeTarget "SnatchTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_59 /* Debug */,
 				OBJ_60 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_91 /* Build configuration list for PBXNativeTarget "Promise" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_92 /* Debug */,
-				OBJ_93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
