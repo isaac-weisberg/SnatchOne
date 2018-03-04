@@ -1,7 +1,7 @@
 .DS_Store
 /.build
 /Packages
-#/*.xcodeproj
-snatch.xcodeproj/xcuserdata
-snatch.xcodeproj/xcshareddata
-snatch.xcodeproj/project.xcworkspace/xcuserdata/
+/*.xcodeproj
+snatch.xcodeproj.template/xcuserdata
+snatch.xcodeproj.template/xcshareddata
+snatch.xcodeproj.template/project.xcworkspace/xcuserdata/
