@@ -11,5 +11,8 @@ test:
 update:
 	swift package update
 
+release:
+	swift build -c release
+
 clean:
 	-rm -rf $(BUILD_DIR)/*
