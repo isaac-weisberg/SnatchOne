@@ -2,6 +2,6 @@
 /.build
 /Packages
 /*.xcodeproj
-snatch.xcodeproj.template/xcuserdata
-snatch.xcodeproj.template/xcshareddata
-snatch.xcodeproj.template/project.xcworkspace/xcuserdata/
+Snatch.xcodeproj.templ/xcuserdata/
+Snatch.xcodeproj.template/project.xcworkspace/xcuserdata/
+**.xcuserdatad
