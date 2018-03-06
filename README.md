@@ -18,8 +18,13 @@ Snatch is Promises meet URLSession.
 
 Download the binary release from the GitHub releases. If none are available, then...
 
+Bulding from source with Carthage using already generated and configured .xcodeproj:
+1. `git clone`
+2. `carthage update`
+3. `carthage build --no-skip-current --platform iOS` for iOS builds, lel, plz pull request for a macOS target
+
 Building from source:
-1. install khanlou/Promise
+1. Manually install khanlou/Promise
 2. `git clone`
 3. `cp -r Snatch.xcodeproj.templ Snatch.xcodeproj`
 4. Open Snatch.xcodeproj

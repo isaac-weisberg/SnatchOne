@@ -5,3 +5,5 @@
 Snatch.xcodeproj.templ/xcuserdata/
 Snatch.xcodeproj.templ/project.xcworkspace/xcuserdata/
 **.xcuserdatad
+Carthage
+Cartfile.resolved

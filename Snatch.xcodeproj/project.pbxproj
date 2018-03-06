@@ -17,6 +17,7 @@
 		A09988922047B1BA008889F6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Post.swift */; };
 		A09988932047B1BA008889F6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* Result.swift */; };
 		A09988942047B1BA008889F6 /* URL+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* URL+components.swift */; };
+		A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
 		OBJ_62 /* JSONBodyEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* JSONBodyEncodingTests.swift */; };
 		OBJ_63 /* URLQueryEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* URLQueryEncodingTests.swift */; };
 		OBJ_64 /* GeneralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* GeneralTests.swift */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		A0477E6A204BC7C400D818EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
 		OBJ_10 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
 		OBJ_11 /* SnatchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnatchModule.swift; sourceTree = "<group>"; };
 		OBJ_13 /* JSONBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyEncoding.swift; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 		A09988892047B121008889F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A0A86C06204E9DE3004DD232 /* Promise.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,6 +364,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -428,6 +436,10 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
