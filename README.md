@@ -26,12 +26,11 @@ Bulding from source with Carthage using already generated and configured .xcodep
 Building from source:
 1. Manually install khanlou/Promise
 2. `git clone`
-3. `cp -r Snatch.xcodeproj.templ Snatch.xcodeproj`
-4. Open Snatch.xcodeproj
-5. (Optionally) Run test target 
-6. Build Settings -> Framework Search Path, make sure that features a directory enclosing your local khanlou/Promise installation
-7. Build Settings -> Skip Install, make sure is set to NO
-8. Archive->Export
+3. Open Snatch.xcodeproj
+4. Build Settings -> Framework Search Path, make sure that features a directory enclosing your local khanlou/Promise installation
+5. Build Settings -> Skip Install, make sure is set to NO
+6. (Optionally) Run test target 
+7. Archive->Export
 
 #### Swift Package Manager, Linux target
 
