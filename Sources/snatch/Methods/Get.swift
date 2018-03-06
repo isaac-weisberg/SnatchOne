@@ -19,7 +19,8 @@ public extension Snatch {
             guard let father = father else {
                 return SnatchError.spooks.promised
             }
-            return father.request(url)
+            let request = URLRequest(url: url)
+            return father.request(request)
         }
 
         /*

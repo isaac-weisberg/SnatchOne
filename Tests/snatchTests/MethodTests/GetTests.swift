@@ -13,14 +13,25 @@ class GetTests: XCTestCase {
         Snatch.shared.get[ url ]
         .then { result in
             XCTAssert(result.response.statusCode == 200, "Should be equal to 200.")
-            exp.fulfill()
         }
         .catch { error in
             XCTFail("Should've not thrown \(error)")
+        }.always {
             exp.fulfill()
         }
 
         waitForExpectations(timeout: 20.0)
+    }
+
+    func testURLRequestCreation() {
+        guard let url = URL(string: "https://apple.com/") else {
+            XCTFail("Should've created url to a remote source.")
+            return
+        }
+
+        let req = URLRequest(url: url)
+
+        XCTAssert(req.httpMethod == "GET", "Should be get by default")
     }
 
     /*
@@ -30,5 +41,6 @@ class GetTests: XCTestCase {
 
     static var allTests = [
         ("testGetDownload", testGetDownload),
+        ("testURLRequestCreation", testURLRequestCreation),
     ]
 }
