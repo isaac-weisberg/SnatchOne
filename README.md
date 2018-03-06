@@ -1,6 +1,7 @@
 # Snatch
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/f56175a9f2d027469773/maintainability)](https://codeclimate.com/github/isaac-weisberg/snatch/maintainability)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Snatch is Promises meet URLSession.
 
