@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A013A67F2058BC900076DFD9 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A013A67E2058BC900076DFD9 /* Result+Json.swift */; };
 		A099888B2047B1BA008889F6 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Snatch.swift */; };
 		A099888C2047B1BA008889F6 /* SnatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SnatchModule.swift */; };
 		A099888D2047B1BA008889F6 /* JSONBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* JSONBodyEncoding.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A013A67E2058BC900076DFD9 /* Result+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
 		A0477E6A204BC7C400D818EF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		OBJ_21 /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				A013A67E2058BC900076DFD9 /* Result+Json.swift */,
 				OBJ_22 /* Result.swift */,
 			);
 			path = Result;
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09988932047B1BA008889F6 /* Result.swift in Sources */,
+				A013A67F2058BC900076DFD9 /* Result+Json.swift in Sources */,
 				A09988942047B1BA008889F6 /* URL+components.swift in Sources */,
 				A099888D2047B1BA008889F6 /* JSONBodyEncoding.swift in Sources */,
 				A099888E2047B1BA008889F6 /* URLQueryEncoding.swift in Sources */,
