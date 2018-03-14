@@ -5,7 +5,7 @@ extension Result {
     /**
         This error gets thrown in rejection to an attempt to extract json from a result with empty body data.
     */
-    class NoBodyError: Error {
+    public class NoBodyError: Error {
         var localizedDescription: String = "The response body is empty."
     }
 
@@ -16,7 +16,7 @@ extension Result {
 
         - returns: promise resolveing with TargetType.
     */
-    func json<TargetType: Decodable>(_ type: TargetType.Type) -> Promise<TargetType> {
+    public func json<TargetType: Decodable>(_ type: TargetType.Type) -> Promise<TargetType> {
         guard let data = data else {
             return Promise(error: NoBodyError())
         }
