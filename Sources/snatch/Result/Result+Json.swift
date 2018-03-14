@@ -1,7 +1,7 @@
 import Promise
 import Foundation
 
-extension Result {
+public extension Result {
     /**
         This error gets thrown in rejection to an attempt to extract json from a result with empty body data.
     */
