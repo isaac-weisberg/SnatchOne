@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A013A67F2058BC900076DFD9 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A013A67E2058BC900076DFD9 /* Result+Json.swift */; };
 		A099888B2047B1BA008889F6 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* Snatch.swift */; };
-		A099888C2047B1BA008889F6 /* SnatchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SnatchModule.swift */; };
 		A099888D2047B1BA008889F6 /* JSONBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* JSONBodyEncoding.swift */; };
 		A099888E2047B1BA008889F6 /* URLQueryEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* URLQueryEncoding.swift */; };
 		A099888F2047B1BA008889F6 /* Error+Promised.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Error+Promised.swift */; };
@@ -32,7 +31,6 @@
 		A09988812047B114008889F6 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
 		OBJ_10 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
-		OBJ_11 /* SnatchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnatchModule.swift; sourceTree = "<group>"; };
 		OBJ_13 /* JSONBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyEncoding.swift; sourceTree = "<group>"; };
 		OBJ_14 /* URLQueryEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoding.swift; sourceTree = "<group>"; };
 		OBJ_16 /* Error+Promised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Promised.swift"; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* Snatch.swift */,
-				OBJ_11 /* SnatchModule.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -307,7 +304,6 @@
 				A09988942047B1BA008889F6 /* URL+components.swift in Sources */,
 				A099888D2047B1BA008889F6 /* JSONBodyEncoding.swift in Sources */,
 				A099888E2047B1BA008889F6 /* URLQueryEncoding.swift in Sources */,
-				A099888C2047B1BA008889F6 /* SnatchModule.swift in Sources */,
 				A09988922047B1BA008889F6 /* Post.swift in Sources */,
 				A09988912047B1BA008889F6 /* Get.swift in Sources */,
 				A099888F2047B1BA008889F6 /* Error+Promised.swift in Sources */,
