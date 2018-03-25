@@ -34,13 +34,39 @@ class GetTests: XCTestCase {
         XCTAssert(req.httpMethod == "GET", "Should be get by default")
     }
 
+    func testHeadersApplication() {
+        let exp = expectation(description: "Should at least try to download")
+
+        guard let url = URL(string: "https://apple.com/") else {
+            XCTFail("Should've created url to a remote source.")
+            return
+        }
+
+        let params = [
+            "id": "3",
+            "people": "sodds"
+        ]
+
+        Snatch.shared.get[ url, params, customHeaders ].always {
+            exp.fulfill()
+        }
+
+        waitForExpectations(timeout: 20.0)
+    }
+
     /*
         There should be a test of a request with URLEncoded parameters, but you know an echo website? cuz I don't
         so i can't really think of how am I supposed to test it out...
     */
 
+    let customHeaders = [
+        "User-agent" : "AMD286 / MS-DOS 5.0 / Chromium 32.15.133242t4",
+        "Content-Type" : "useless garbage"
+    ]
+
     static var allTests = [
         ("testGetDownload", testGetDownload),
         ("testURLRequestCreation", testURLRequestCreation),
+        ("testHeadersApplication", testHeadersApplication),
     ]
 }

@@ -28,8 +28,33 @@ public extension Snatch {
             - returns: Promise that fulfills with Snatch.Result object.
         */
         public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters) -> Promise<Result> {
-            return self [ url, parameters, nullableHeaders: nil ]
+            guard let father = father else {
+                return SnatchError.spooks.promised
+            }
+
+            var request = generateRequest(outOf: url, nil)
+
+            do {
+                try apply(parameters: parameters, to: &request)
+            } catch {
+                return SnatchError.encoding(error).promised
+            }
+
+            return father.request(request)
         }
+
+        /**
+            Sends a POST request with the specified parameters and headers.
+
+            - parameter url: the url.
+            - parameter parameters: an encodable object to be encoded as JSON and sent as a body of the request.
+            - parameter headers: http headers
+
+            - returns: Promise that fulfills with Snatch.Result object.
+        */
+        // public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]) -> Promise<Result> {
+        //     return self [ url, parameters, headers ]
+        // }
 
         /**
             Sends a POST request with the specified parameters and headers.
@@ -41,39 +66,22 @@ public extension Snatch {
             - returns: Promise that fulfills with Snatch.Result object.
         */
         public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]) -> Promise<Result> {
-            return self [ url, parameters, headers ]
-        }
-
-        /**
-            Sends a POST request with the specified parameters and headers.
-
-            - parameter url: the url.
-            - parameter parameters: an encodable object to be encoded as JSON and sent as a body of the request.
-            - parameter headers: http headers
-
-            - returns: Promise that fulfills with Snatch.Result object.
-        */
-        private subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, nullableHeaders headers: [String: String]?) -> Promise<Result> {
             guard let father = father else {
                 return SnatchError.spooks.promised
             }
 
             var request = generateRequest(outOf: url, headers)
 
-            if let parameters = parameters {
-                let encoder = JSONBodyEncoding()
-
-                do {
-                    try encoder.apply(parameters, to: &request)
-                } catch {
-                    return SnatchError.encoding(error).promised
-                }
+            do {
+                try apply(parameters: parameters, to: &request)
+            } catch {
+                return SnatchError.encoding(error).promised
             }
 
             return father.request(request)
         }
 
-        func generateRequest(outOf url: URL, _ headers: [String: String]? = nil) -> URLRequest {
+        internal func generateRequest(outOf url: URL, _ headers: [String: String]? = nil) -> URLRequest {
             var request = URLRequest(url: url)
 
             request.httpMethod = "POST"
@@ -83,6 +91,14 @@ public extension Snatch {
             }
 
             return request
+        }
+
+        internal func apply<Parameters: Encodable>(parameters: Parameters?, to request: inout URLRequest) throws {
+            if let parameters = parameters {
+                let encoder = JSONBodyEncoding()
+
+                try encoder.apply(parameters, to: &request)
+            }
         }
     }
 }
