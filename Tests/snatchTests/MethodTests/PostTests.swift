@@ -1,6 +1,18 @@
 import XCTest
 @testable import snatch
 
+extension PostTests {
+    internal class CustomPieceOfData: Encodable {
+        let name: String
+        let age: Int
+
+        init(_ name: String, _ age: Int) {
+            self.name = name
+            self.age = age
+        }
+    }
+}
+
 class PostTests: XCTestCase {
     func testPostModuleRequestGeneration() {
         let post = Snatch.Post()
@@ -9,7 +21,6 @@ class PostTests: XCTestCase {
 
         XCTAssert(req.url == arbitraryURL, "The url should be teh saem.")
         XCTAssertNotNil(req.allHTTPHeaderFields, "The headers should be there.")
-        print(req.allHTTPHeaderFields)
         XCTAssert(req.allHTTPHeaderFields! == customHeaders, "Headers should be the same thing.")
     }
     
@@ -17,7 +28,10 @@ class PostTests: XCTestCase {
         let exp = expectation(description: "Should work")
         
         let snatch = Snatch()
-        snatch.post[ arbitraryURL, ["fuck": 3, "faffing": "over 9000"], customHeaders ].then { res in
+
+        let params = CustomPieceOfData("Jackie", 24)
+
+        snatch.post[ arbitraryURL, params, customHeaders ].then { res in
             exp.fulfill()
         }.catch { error in
             XCTFail("\(error)")
