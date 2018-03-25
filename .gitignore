@@ -1,9 +1,6 @@
 .DS_Store
 /.build
 /Packages
-#/*.xcodeproj
-Snatch.xcodeproj.templ/xcuserdata/
-Snatch.xcodeproj.templ/project.xcworkspace/xcuserdata/
 **.xcuserdatad
 Carthage
 Cartfile.resolved
