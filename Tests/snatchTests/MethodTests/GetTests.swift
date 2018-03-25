@@ -48,7 +48,6 @@ class GetTests: XCTestCase {
         ]
 
         Snatch.shared.get[ url, params, customHeaders ].always {
-            XCTAssert(true, "Should be true")
             exp.fulfill()
         }
 

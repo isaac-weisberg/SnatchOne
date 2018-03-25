@@ -25,18 +25,14 @@ class PostTests: XCTestCase {
     }
     
     func testPostWithHeaders() {
-        let exp = expectation(description: "Should work")
+        let exp = expectation(description: "Should at very least call the method and successfully complete.")
         
         let snatch = Snatch()
 
         let params = CustomPieceOfData("Jackie", 24)
 
-        snatch.post[ arbitraryURL, params, customHeaders ].then { res in
+        snatch.post[ arbitraryURL, params, customHeaders ].always {
             exp.fulfill()
-        }.catch { error in
-            XCTFail("\(error)")
-        }.always {
-            print("done")
         }
         
         waitForExpectations(timeout: 20.0)
