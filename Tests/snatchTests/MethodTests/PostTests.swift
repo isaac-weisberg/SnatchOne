@@ -14,7 +14,7 @@ class PostTests: XCTestCase {
     }
     
     func testPostWithHeaders() {
-        let exp = //expectation(description: "Should work")
+        let exp = expectation(description: "Should work")
         
         let snatch = Snatch()
         snatch.post[ arbitraryURL, ["fuck": 3, "faffing": "over 9000"], customHeaders ].then { res in
