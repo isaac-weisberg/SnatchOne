@@ -1,5 +1,5 @@
 import XCTest
-@testable import snatch
+@testable import Snatch
 
 class URLQueryEncodingTests: XCTestCase {
     func testURLEncoding() {
