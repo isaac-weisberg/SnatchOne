@@ -9,35 +9,20 @@ Snatch is Promises meet URLSession.
 ## Goals
 
 1. Provide a Promise-based wrapping around URLSession.
-2. Provide an API sowewhat reminiscent of the __EcmaScript fetch API__. 
-3. Be as lightweight as a kite, providing THE most basic functionality there is, the examples are in "Features" section.
-4. Be usable on both Linux and Apple platforms. (Disclaimer: doesn't work on Linux platform, at least as of Swift 4.0.3 because URLSession is not entirely implemented in Foundation framework).
+2. Provide an API sowewhat reminiscent of the __ECMAScript fetch API__. By "somewhat reminiscent" presumed the principle of producing promises.
+3. Be usable on both Linux and Apple platforms. (Disclaimer: doesn't work on Linux platform, at least as of Swift 4.0.3 because URLSession is not entirely implemented in Foundation framework).
 
 ## Installation
 
-#### Xcode, macOS/iOS/watchOS/tvOS targets
+#### Xcode, Apple targets
 
-Download the binary release from the GitHub releases. If none are available, then...
+Installation with Carthage is a preferred method. Add this repository to the Cartfile, preferably some particular version, then `carthage update` and then add the resulting framework to the `carthage copy-frameworks` build phase.
 
-Bulding from source with Carthage using already generated and configured .xcodeproj:
-1. `git clone`
-2. `carthage update`
-3. `carthage build --no-skip-current --platform iOS` for iOS builds, lel, plz pull request for a macOS target
-
-Building from source:
-1. Manually install khanlou/Promise
-2. `git clone`
-3. Open Snatch.xcodeproj
-4. Build Settings -> Framework Search Path, make sure that features a directory enclosing your local khanlou/Promise installation
-5. Build Settings -> Skip Install, make sure is set to NO
-6. (Optionally) Run test target 
-7. Archive->Export
+One could also download the binary release from the GitHub releases. If none are available, one perhaps could build from source with Carthage...
 
 #### Swift Package Manager, Linux target
 
-No binary releases, at least right now.
-
-Recommended to automate the process by declaring a dependency on the project, target snatch.
+Recommended to automate the process by declaring a dependency on the project, target Snatch.
 
 Building from source:
 1. `git clone`
