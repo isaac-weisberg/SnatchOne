@@ -182,20 +182,20 @@
 			isa = PBXGroup;
 			children = (
 				A0890F702069D49E00300A53 /* SnatchTests */,
-				OBJ_26 /* snatchTests */,
+				OBJ_26 /* SnatchTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_26 /* snatchTests */ = {
+		OBJ_26 /* SnatchTests */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_27 /* EncodingTests */,
 				OBJ_30 /* GeneralTests.swift */,
 				OBJ_31 /* MethodTests */,
 			);
-			name = snatchTests;
-			path = Tests/snatchTests;
+			name = SnatchTests;
+			path = Tests/SnatchTests;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_27 /* EncodingTests */ = {
@@ -241,12 +241,12 @@
 			children = (
 				A0890F572069D05E00300A53 /* Snatch macOS */,
 				A0890F682069D09C00300A53 /* Snatch */,
-				OBJ_8 /* snatch */,
+				OBJ_8 /* Snatch */,
 			);
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_8 /* snatch */ = {
+		OBJ_8 /* Snatch */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Core */,
@@ -256,8 +256,8 @@
 				OBJ_21 /* Result */,
 				OBJ_23 /* Util */,
 			);
-			name = snatch;
-			path = Sources/snatch;
+			name = Snatch;
+			path = Sources/Snatch;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_9 /* Core */ = {
