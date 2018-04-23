@@ -5,8 +5,8 @@ import Foundation
     This extension adds capability to perform get requests.
 */
 public extension Snatch {
-    public class Get: SnatchModule {
-        weak public var father: Snatch?
+    public class Get {
+        internal weak var father: Snatch?
 
         /**
             Starts a data task on a URLSession, resolves upon completion.

@@ -1,5 +1,5 @@
 import XCTest
-@testable import snatch
+@testable import Snatch
 
 class URLQueryEncodingTests: XCTestCase {
     func testURLEncoding() {
@@ -23,15 +23,16 @@ class URLQueryEncodingTests: XCTestCase {
         let baseUrl = URL(string: "https://apple.com/shitlang?objectivec=yes")!
 
         let newQuery = "name=Peter&lastname=Jackson"
-
+        
         let expectation = "https://apple.com/shitlang?name=Peter&lastname=Jackson"
+        let expectationAlt = "https://apple.com/shitlang?lastname=Jackson&name=Peter"
 
         guard let newUrl = encoding.swapQuery(of: baseUrl, with: newQuery) else {
             XCTFail("Should've successfully created new url")
             return
         }
 
-        XCTAssert(newUrl.absoluteString == expectation, "Should've successfully swapped query for a new one, but instead resulted in \(newUrl.absoluteString)")
+        XCTAssert(newUrl.absoluteString == expectation || newUrl.absoluteString == expectationAlt, "Should've successfully swapped query for a new one, but instead resulted in \(newUrl.absoluteString)")
     }
 
     func testURLEncodingQuerySwapButWithParametersArray() {

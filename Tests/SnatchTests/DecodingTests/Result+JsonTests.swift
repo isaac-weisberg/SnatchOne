@@ -1,6 +1,6 @@
 import XCTest
 import Foundation
-@testable import snatch
+@testable import Snatch
 
 class JSONDecodingForResultTests: XCTestCase {
     class ResultTargetType: Decodable {
