@@ -20,8 +20,12 @@ class PostTests: XCTestCase {
         let req = post.generateRequest(outOf: arbitraryURL, customHeaders)
 
         XCTAssert(req.url == arbitraryURL, "The url should be teh saem.")
-        XCTAssertNotNil(req.allHTTPHeaderFields, "The headers should be there.")
-        XCTAssert(req.allHTTPHeaderFields! == customHeaders, "Headers should be the same thing.")
+        guard let headers = req.allHTTPHeaderFields else {
+            XCTFail("Somehow the headers are nil, which is unexpected.")
+            return
+        }
+        
+        XCTAssert(headers == customHeaders, "Headers should be the same thing, but instead they actually are \(headers), in comparison to \(customHeaders)")
     }
     
     func testPostWithHeaders() {
