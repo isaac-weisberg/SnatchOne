@@ -2,21 +2,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "snatch",
+    name: "Snatch",
     products: [
         .library(
-            name: "snatch",
-            targets: ["snatch"]),
+            name: "Snatch",
+            targets: ["Snatch"]),
     ],
     dependencies: [
         .package(url: "https://github.com/khanlou/Promise.git", .branch("master")),
     ],
     targets: [
         .target(
-            name: "snatch",
+            name: "Snatch",
             dependencies: [ "Promise" ]),
         .testTarget(
-            name: "snatchTests",
-            dependencies: [ "snatch" ]),
+            name: "SnatchTests",
+            dependencies: [ "Snatch" ]),
     ]
 )

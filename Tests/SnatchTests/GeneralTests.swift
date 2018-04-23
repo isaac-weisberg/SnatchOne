@@ -1,7 +1,9 @@
 import XCTest
-@testable import snatch
+@testable import Snatch
 
 class GeneralTests: XCTestCase {
+    let snatch = Snatch()
+
     func testCommonRequestDownload() {
         let exp = expectation(description: "Should download the data and successfully resolve. WON'T if no internet connection.")
 
@@ -13,7 +15,7 @@ class GeneralTests: XCTestCase {
         // TODO: utilize time intervals and cache policy. Not necessarily here, but in the project in general.
         let request = URLRequest(url: url)
 
-        Snatch.shared.request(request)
+        snatch.request(request)
         .then { result in
             XCTAssert(result.response.statusCode == 200, "Should be equal to 200.")
             exp.fulfill()

@@ -1,7 +1,9 @@
 import XCTest
-@testable import snatch
+@testable import Snatch
 
 class GetTests: XCTestCase {
+    let snatch = Snatch()
+
     func testGetDownload() {
         let exp = expectation(description: "Should download the data and successfully resolve. WON'T if no internet connection.")
 
@@ -9,8 +11,8 @@ class GetTests: XCTestCase {
             XCTFail("Should've created url to a remote source.")
             return
         }
-        
-        Snatch.shared.get[ url ]
+
+        snatch.get[ url ]
         .then { result in
             XCTAssert(result.response.statusCode == 200, "Should be equal to 200.")
         }
@@ -47,7 +49,7 @@ class GetTests: XCTestCase {
             "people": "sodds"
         ]
 
-        Snatch.shared.get[ url, params, customHeaders ].always {
+        snatch.get[ url, params, customHeaders ].always {
             exp.fulfill()
         }
 

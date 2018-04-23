@@ -2,8 +2,6 @@ import Foundation
 import Promise
 
 public class Snatch {
-    public static let shared = Snatch()
-
     /**
         The underlying URLSession object.
     */
@@ -25,7 +23,7 @@ public class Snatch {
     public typealias DataTaskCallback = (Data?, URLResponse?, Error?) -> Void
 
     public init(with sessionConfig: URLSessionConfiguration = URLSessionConfiguration.default) {
-        self.session = URLSession(configuration: sessionConfig)
+        session = URLSession(configuration: sessionConfig)
         // Give a reference to a Snatch instance to all the extensions.
         get.father = self
         post.father = self

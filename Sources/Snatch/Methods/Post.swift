@@ -5,8 +5,8 @@ import Foundation
     This extension adds capability to perform post requests.
 */
 public extension Snatch {
-    public class Post: SnatchModule {
-        weak public var father: Snatch?
+    public class Post {
+        internal weak var father: Snatch?
 
         /**
             Sends an empty body, no headers, POST request directly at URL.

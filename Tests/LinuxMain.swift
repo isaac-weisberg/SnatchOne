@@ -1,5 +1,5 @@
 import XCTest
-@testable import snatchTests
+@testable import SnatchTests
 
 XCTMain([
     testCase(GeneralTests.allTests),

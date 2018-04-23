@@ -37,7 +37,8 @@ xcuserdata/
 .build/
 
 ## Carthage
-Carthage/Build
+Carthage/
+Cartfile.resolved
 
 # fastlane
 # https://github.com/fastlane/fastlane/blob/master/docs/Gitignore.md
