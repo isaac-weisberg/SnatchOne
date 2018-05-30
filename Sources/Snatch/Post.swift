@@ -12,19 +12,7 @@ public extension Snatch.Post {
      - returns: Promise that fulfills with Snatch.Result object.
      */
     public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters) -> Promise<Result> {
-        guard let father = father else {
-            return SnatchError.spooks.promised
-        }
-        
-        var request = generateRequest(outOf: url, nil)
-        
-        do {
-            try apply(parameters: parameters, to: &request)
-        } catch {
-            return SnatchError.encoding(error).promised
-        }
-        
-        return father.request(request)
+        return self [ url, parameters, nil ]
     }
     
     /**
@@ -36,17 +24,12 @@ public extension Snatch.Post {
      
      - returns: Promise that fulfills with Snatch.Result object.
      */
-    public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]) -> Promise<Result> {
-        guard let father = father else {
-            return SnatchError.spooks.promised
-        }
-        
-        var request = generateRequest(outOf: url, headers)
-        
+    public subscript<Parameters: Encodable>(_ url: URL, _ parameters: Parameters?, _ headers: [String: String]?) -> Promise<Result> {
+        let request: URLRequest
         do {
-            try apply(parameters: parameters, to: &request)
+            request = try generate(url, parameters, headers)
         } catch {
-            return SnatchError.encoding(error).promised
+            return Promise(error: error)
         }
         
         return father.request(request)

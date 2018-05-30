@@ -15,12 +15,10 @@
 		A0FD655F208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
 		A0FD6560208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
-		A0FD6566208D78C000BA8F52 /* Error+Promised.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654E208D78A900BA8F52 /* Error+Promised.swift */; };
 		A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
 		A0FD6569208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
 		A0FD656A208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
-		A0FD6570208D78C000BA8F52 /* Error+Promised.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654E208D78A900BA8F52 /* Error+Promised.swift */; };
 		A0FD658F208D7A7900BA8F52 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F562069D05E00300A53 /* Snatch.framework */; };
 		A0FD6595208D7A8D00BA8F52 /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6555208D78A900BA8F52 /* GetTests.swift */; };
 		A0FD6596208D7A8D00BA8F52 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6556208D78A900BA8F52 /* PostTests.swift */; };
@@ -57,7 +55,6 @@
 		A0FD6543208D78A900BA8F52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A0FD6544208D78A900BA8F52 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
 		A0FD6546208D78A900BA8F52 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
-		A0FD654E208D78A900BA8F52 /* Error+Promised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Promised.swift"; sourceTree = "<group>"; };
 		A0FD6550208D78A900BA8F52 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		A0FD6552208D78A900BA8F52 /* SnatchTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SnatchTests.plist; sourceTree = "<group>"; };
 		A0FD6555208D78A900BA8F52 /* GetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
@@ -135,7 +132,6 @@
 				A0FD6543208D78A900BA8F52 /* Post.swift */,
 				A0FD6544208D78A900BA8F52 /* Get.swift */,
 				A0FD6541208D78A900BA8F52 /* Result+Json.swift */,
-				A0FD654E208D78A900BA8F52 /* Error+Promised.swift */,
 			);
 			path = Snatch;
 			sourceTree = "<group>";
@@ -366,7 +362,6 @@
 			files = (
 				A0FD656A208D78C000BA8F52 /* Get.swift in Sources */,
 				A0FD6569208D78C000BA8F52 /* Post.swift in Sources */,
-				A0FD6570208D78C000BA8F52 /* Error+Promised.swift in Sources */,
 				A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */,
 			);
@@ -378,7 +373,6 @@
 			files = (
 				A0FD6560208D78C000BA8F52 /* Get.swift in Sources */,
 				A0FD655F208D78C000BA8F52 /* Post.swift in Sources */,
-				A0FD6566208D78C000BA8F52 /* Error+Promised.swift in Sources */,
 				A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */,
 			);
