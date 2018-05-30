@@ -16,7 +16,7 @@ Snatch is Promises meet URLSession.
 
 #### Xcode, Apple targets
 
-Installation with Carthage is a preferred method. Add this repository to the Cartfile, preferably some particular version, then `carthage update` and then add the resulting framework to the `carthage copy-frameworks` build phase.
+Installation with Carthage is a preferred method. Add this repository to the Cartfile, preferably some particular version, then `carthage update` and then add the resulting framework to the `carthage copy-frameworks` build phase. NOTE: when we say "resulting framework", that is actually meant, is 2 frameworks, Snatch and SnatchBase. Yeah, life ain't fair.
 
 One could also download the binary release from the GitHub releases. If none are available, one perhaps could build from source with Carthage...
 
