@@ -7,27 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A036A59E20BE46C200508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A59D20BE46C200508F2B /* SnatchBase.framework */; };
+		A036A5A020BE46CE00508F2B /* SnatchBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A036A59F20BE46CE00508F2B /* SnatchBase.framework */; };
 		A0890F6A2069D34300300A53 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F692069D34300300A53 /* Promise.framework */; };
 		A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
-		A0FD655D208D78C000BA8F52 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6540208D78A900BA8F52 /* Result.swift */; };
 		A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
 		A0FD655F208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
 		A0FD6560208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
-		A0FD6562208D78C000BA8F52 /* URL+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6548208D78A900BA8F52 /* URL+components.swift */; };
-		A0FD6563208D78C000BA8F52 /* URLQueryEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654A208D78A900BA8F52 /* URLQueryEncoding.swift */; };
-		A0FD6564208D78C000BA8F52 /* JSONBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654B208D78A900BA8F52 /* JSONBodyEncoding.swift */; };
-		A0FD6565208D78C000BA8F52 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654D208D78A900BA8F52 /* Error.swift */; };
 		A0FD6566208D78C000BA8F52 /* Error+Promised.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654E208D78A900BA8F52 /* Error+Promised.swift */; };
-		A0FD6567208D78C000BA8F52 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6540208D78A900BA8F52 /* Result.swift */; };
 		A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
 		A0FD6569208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
 		A0FD656A208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
-		A0FD656C208D78C000BA8F52 /* URL+components.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6548208D78A900BA8F52 /* URL+components.swift */; };
-		A0FD656D208D78C000BA8F52 /* URLQueryEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654A208D78A900BA8F52 /* URLQueryEncoding.swift */; };
-		A0FD656E208D78C000BA8F52 /* JSONBodyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654B208D78A900BA8F52 /* JSONBodyEncoding.swift */; };
-		A0FD656F208D78C000BA8F52 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654D208D78A900BA8F52 /* Error.swift */; };
 		A0FD6570208D78C000BA8F52 /* Error+Promised.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD654E208D78A900BA8F52 /* Error+Promised.swift */; };
 		A0FD658F208D7A7900BA8F52 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F562069D05E00300A53 /* Snatch.framework */; };
 		A0FD6595208D7A8D00BA8F52 /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6555208D78A900BA8F52 /* GetTests.swift */; };
@@ -49,21 +41,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A036A59920BE467800508F2B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		A036A59A20BE467900508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		A036A59B20BE467900508F2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A036A59C20BE467900508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A036A59D20BE46C200508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/iOS/SnatchBase.framework; sourceTree = "<group>"; };
+		A036A59F20BE46CE00508F2B /* SnatchBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnatchBase.framework; path = Carthage/Build/Mac/SnatchBase.framework; sourceTree = "<group>"; };
 		A0890F562069D05E00300A53 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0890F692069D34300300A53 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/Mac/Promise.framework; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* Snatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Snatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
 		A0FD653C208D78A900BA8F52 /* Snatch.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Snatch.plist; sourceTree = "<group>"; };
 		A0FD653D208D78A900BA8F52 /* Snatch_macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Snatch_macOS.plist; sourceTree = "<group>"; };
-		A0FD6540208D78A900BA8F52 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A0FD6541208D78A900BA8F52 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
 		A0FD6543208D78A900BA8F52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A0FD6544208D78A900BA8F52 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
 		A0FD6546208D78A900BA8F52 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
-		A0FD6548208D78A900BA8F52 /* URL+components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+components.swift"; sourceTree = "<group>"; };
-		A0FD654A208D78A900BA8F52 /* URLQueryEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoding.swift; sourceTree = "<group>"; };
-		A0FD654B208D78A900BA8F52 /* JSONBodyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyEncoding.swift; sourceTree = "<group>"; };
-		A0FD654D208D78A900BA8F52 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		A0FD654E208D78A900BA8F52 /* Error+Promised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+Promised.swift"; sourceTree = "<group>"; };
 		A0FD6550208D78A900BA8F52 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		A0FD6552208D78A900BA8F52 /* SnatchTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SnatchTests.plist; sourceTree = "<group>"; };
@@ -81,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A036A5A020BE46CE00508F2B /* SnatchBase.framework in Frameworks */,
 				A0890F6A2069D34300300A53 /* Promise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A036A59E20BE46C200508F2B /* SnatchBase.framework in Frameworks */,
 				A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +102,8 @@
 		A09988892047B121008889F6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A036A59D20BE46C200508F2B /* SnatchBase.framework */,
+				A036A59F20BE46CE00508F2B /* SnatchBase.framework */,
 				A0A86C06204E9DE3004DD232 /* Promise.framework */,
 				A0890F692069D34300300A53 /* Promise.framework */,
 			);
@@ -134,66 +131,13 @@
 		A0FD653E208D78A900BA8F52 /* Snatch */ = {
 			isa = PBXGroup;
 			children = (
-				A0FD653F208D78A900BA8F52 /* Result */,
-				A0FD6542208D78A900BA8F52 /* Methods */,
-				A0FD6545208D78A900BA8F52 /* Core */,
-				A0FD6547208D78A900BA8F52 /* Util */,
-				A0FD6549208D78A900BA8F52 /* Encoding */,
-				A0FD654C208D78A900BA8F52 /* Error */,
-			);
-			path = Snatch;
-			sourceTree = "<group>";
-		};
-		A0FD653F208D78A900BA8F52 /* Result */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6540208D78A900BA8F52 /* Result.swift */,
-				A0FD6541208D78A900BA8F52 /* Result+Json.swift */,
-			);
-			path = Result;
-			sourceTree = "<group>";
-		};
-		A0FD6542208D78A900BA8F52 /* Methods */ = {
-			isa = PBXGroup;
-			children = (
+				A0FD6546208D78A900BA8F52 /* Snatch.swift */,
 				A0FD6543208D78A900BA8F52 /* Post.swift */,
 				A0FD6544208D78A900BA8F52 /* Get.swift */,
-			);
-			path = Methods;
-			sourceTree = "<group>";
-		};
-		A0FD6545208D78A900BA8F52 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6546208D78A900BA8F52 /* Snatch.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		A0FD6547208D78A900BA8F52 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6548208D78A900BA8F52 /* URL+components.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		A0FD6549208D78A900BA8F52 /* Encoding */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD654A208D78A900BA8F52 /* URLQueryEncoding.swift */,
-				A0FD654B208D78A900BA8F52 /* JSONBodyEncoding.swift */,
-			);
-			path = Encoding;
-			sourceTree = "<group>";
-		};
-		A0FD654C208D78A900BA8F52 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD654D208D78A900BA8F52 /* Error.swift */,
+				A0FD6541208D78A900BA8F52 /* Result+Json.swift */,
 				A0FD654E208D78A900BA8F52 /* Error+Promised.swift */,
 			);
-			path = Error;
+			path = Snatch;
 			sourceTree = "<group>";
 		};
 		A0FD654F208D78A900BA8F52 /* Tests */ = {
@@ -264,6 +208,10 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				A036A59C20BE467900508F2B /* .gitignore */,
+				A036A59A20BE467900508F2B /* Cartfile */,
+				A036A59920BE467800508F2B /* Package.swift */,
+				A036A59B20BE467900508F2B /* README.md */,
 				A0FD653A208D78A900BA8F52 /* Sources */,
 				A0FD654F208D78A900BA8F52 /* Tests */,
 				OBJ_41 /* Products */,
@@ -416,16 +364,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FD656E208D78C000BA8F52 /* JSONBodyEncoding.swift in Sources */,
 				A0FD656A208D78C000BA8F52 /* Get.swift in Sources */,
 				A0FD6569208D78C000BA8F52 /* Post.swift in Sources */,
 				A0FD6570208D78C000BA8F52 /* Error+Promised.swift in Sources */,
 				A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */,
-				A0FD6567208D78C000BA8F52 /* Result.swift in Sources */,
-				A0FD656D208D78C000BA8F52 /* URLQueryEncoding.swift in Sources */,
-				A0FD656F208D78C000BA8F52 /* Error.swift in Sources */,
-				A0FD656C208D78C000BA8F52 /* URL+components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,16 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FD6564208D78C000BA8F52 /* JSONBodyEncoding.swift in Sources */,
 				A0FD6560208D78C000BA8F52 /* Get.swift in Sources */,
 				A0FD655F208D78C000BA8F52 /* Post.swift in Sources */,
 				A0FD6566208D78C000BA8F52 /* Error+Promised.swift in Sources */,
 				A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */,
-				A0FD655D208D78C000BA8F52 /* Result.swift in Sources */,
-				A0FD6563208D78C000BA8F52 /* URLQueryEncoding.swift in Sources */,
-				A0FD6565208D78C000BA8F52 /* Error.swift in Sources */,
-				A0FD6562208D78C000BA8F52 /* URL+components.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
