@@ -11,14 +11,8 @@ public extension Result {
         - returns: promise resolveing with TargetType.
     */
     public func json<TargetType: Decodable>(_ type: TargetType.Type) -> Promise<TargetType> {
-        guard let data = data else {
-            return Promise(error: NoBodyError.new)
-        }
-
         return Promise { fulfill, reject in
-            let decoder = JSONDecoder()
-
-            let result = try decoder.decode(type, from: data)
+            let result: TargetType = try self.json(type)
 
             fulfill(result)
         }
