@@ -11,11 +11,7 @@ public extension Snatch.Get {
      - returns: Promise that fulfills with Snatch.Result object.
      */
     public subscript(_ url: URL) -> Promise<Result> {
-        guard let father = father else {
-            return SnatchError.spooks.promised
-        }
-        let request = URLRequest(url: url)
-        return father.request(request)
+        return self[ url, nil, nil ]
     }
     
     /**
@@ -27,11 +23,7 @@ public extension Snatch.Get {
      - returns: Promise that fulfills with Snatch.Result object.
      */
     public subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
-        guard let newURL = encoder.swapQuery(of: url, with: params) else {
-            return SnatchError.spooks.promised
-        }
-        
-        return self [ newURL ]
+        return self [ url, params, nil ]
     }
     
     /**
@@ -43,25 +35,14 @@ public extension Snatch.Get {
      
      - returns: Promise that fulfills with Snatch.Result object.
      */
-    public subscript(_ url: URL, _ params: [AnyHashable: Any]?, _ headers: [String: String]) -> Promise<Result> {
-        guard let father = father else {
-            return SnatchError.spooks.promised
+    public subscript(_ url: URL, _ params: URLQueryEncoding.Parameters?, _ headers: [String: String]?) -> Promise<Result> {
+        let request: URLRequest
+        
+        do {
+            request = try generate(url, params, headers)
+        } catch {
+            return Promise(error: error)
         }
-        
-        let newUrl: URL
-        if let parameters = params {
-            guard let urlWithUpdateQuery = encoder.swapQuery(of: url, with: parameters) else {
-                return SnatchError.spooks.promised
-            }
-            
-            newUrl = urlWithUpdateQuery
-        } else {
-            newUrl = url
-        }
-        
-        var request = URLRequest(url: newUrl)
-        
-        request.allHTTPHeaderFields = headers
         
         return father.request(request)
     }
