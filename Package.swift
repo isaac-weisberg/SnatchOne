@@ -10,11 +10,12 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/khanlou/Promise.git", .branch("master")),
+        .package(url: "https://github.com/isaac-weisberg/snatchBase.git", .branch("master")),
     ],
     targets: [
         .target(
             name: "Snatch",
-            dependencies: [ "Promise" ]),
+            dependencies: [ "Promise", "SnatchBase" ]),
         .testTarget(
             name: "SnatchTests",
             dependencies: [ "Snatch" ]),

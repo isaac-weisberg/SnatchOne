@@ -1,6 +1,7 @@
 import Promise
+import SnatchBase
 
-extension SnatchError {
+public extension SnatchError {
     var promised: Promise<Result> {
         return Promise(error: self)
     }
