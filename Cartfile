@@ -1,2 +1,2 @@
 github "khanlou/Promise"
-github "isaac-weisberg/snatchBase"
+github "isaac-weisberg/snatchBase" ~> 2.0
