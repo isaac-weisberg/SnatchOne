@@ -27,16 +27,13 @@ public extension Snatch {
      - returns: DataTaskCallback, i.e. a closure that is meant to be called by URLSessionDataTask upon completion :)
      */
     internal func commonHandler(_ fulfill: @escaping (Result) -> (), _ reject: @escaping (Error) -> ()) -> SnatchTaskCallback {
-        return { result, error in
-            if let error = error {
+        return { result in
+            switch result {
+            case .success(let res):
+                fulfill(res)
+            case .failure(let error):
                 reject(error)
-                return
             }
-            guard let result = result else {
-                reject(SnatchError.spooks)
-                return
-            }
-            fulfill(result)
         }
     }
 }
