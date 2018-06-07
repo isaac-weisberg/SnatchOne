@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleExecutable</key>
-	<string>Snatch</string>
+	<string>SnatchOne</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.github.isaac-weisberg.snatch</string>
+	<string>com.github.isaac-weisberg.SnatchOne</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>

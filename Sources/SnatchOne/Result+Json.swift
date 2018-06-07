@@ -1,5 +1,5 @@
 import Promise
-import SnatchBase
+import Snatch
 import Foundation
 
 public extension Result {

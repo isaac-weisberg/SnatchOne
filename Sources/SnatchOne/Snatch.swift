@@ -1,4 +1,4 @@
-import SnatchBase
+import Snatch
 import Promise
 import Foundation
 

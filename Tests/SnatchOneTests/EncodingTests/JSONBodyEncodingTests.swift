@@ -1,5 +1,6 @@
 import XCTest
-@testable import Snatch
+import Snatch
+@testable import SnatchOne
 
 class JSONBodyEncodingTests: XCTestCase {
     func testJSONBodyEncoding() throws {
