@@ -9,14 +9,6 @@
 /* Begin PBXBuildFile section */
 		A00CA45320C92411001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA45220C92411001371E8 /* Snatch.framework */; };
 		A00CA45520C9241A001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA45420C9241A001371E8 /* Snatch.framework */; };
-		A00CA45F20C92550001371E8 /* SnatchOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F562069D05E00300A53 /* SnatchOne.framework */; };
-		A00CA46520C92599001371E8 /* GetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6555208D78A900BA8F52 /* GetTests.swift */; };
-		A00CA46620C92599001371E8 /* PostTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6556208D78A900BA8F52 /* PostTests.swift */; };
-		A00CA46720C92599001371E8 /* URLQueryEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6558208D78A900BA8F52 /* URLQueryEncodingTests.swift */; };
-		A00CA46820C92599001371E8 /* JSONBodyEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6559208D78A900BA8F52 /* JSONBodyEncodingTests.swift */; };
-		A00CA46920C92599001371E8 /* GeneralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD655A208D78A900BA8F52 /* GeneralTests.swift */; };
-		A00CA46A20C92599001371E8 /* Result+JsonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD655C208D78A900BA8F52 /* Result+JsonTests.swift */; };
-		A00CA46C20C92656001371E8 /* Snatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00CA45420C9241A001371E8 /* Snatch.framework */; };
 		A0890F6A2069D34300300A53 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F692069D34300300A53 /* Promise.framework */; };
 		A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
 		A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
@@ -29,21 +21,9 @@
 		A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A00CA46020C92550001371E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0890F552069D05E00300A53;
-			remoteInfo = "SnatchOne macOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A00CA45220C92411001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/iOS/Snatch.framework; sourceTree = "<group>"; };
 		A00CA45420C9241A001371E8 /* Snatch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Snatch.framework; path = Carthage/Build/Mac/Snatch.framework; sourceTree = "<group>"; };
-		A00CA45A20C92550001371E8 /* SnatchOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnatchOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00CA45E20C92550001371E8 /* SnatchOneTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SnatchOneTests.plist; sourceTree = "<group>"; };
 		A036A59920BE467800508F2B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		A036A59A20BE467900508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A036A59B20BE467900508F2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -58,25 +38,9 @@
 		A0FD6543208D78A900BA8F52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A0FD6544208D78A900BA8F52 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
 		A0FD6546208D78A900BA8F52 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
-		A0FD6550208D78A900BA8F52 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
-		A0FD6555208D78A900BA8F52 /* GetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTests.swift; sourceTree = "<group>"; };
-		A0FD6556208D78A900BA8F52 /* PostTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTests.swift; sourceTree = "<group>"; };
-		A0FD6558208D78A900BA8F52 /* URLQueryEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncodingTests.swift; sourceTree = "<group>"; };
-		A0FD6559208D78A900BA8F52 /* JSONBodyEncodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyEncodingTests.swift; sourceTree = "<group>"; };
-		A0FD655A208D78A900BA8F52 /* GeneralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralTests.swift; sourceTree = "<group>"; };
-		A0FD655C208D78A900BA8F52 /* Result+JsonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+JsonTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A00CA45720C92550001371E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A00CA45F20C92550001371E8 /* SnatchOne.framework in Frameworks */,
-				A00CA46C20C92656001371E8 /* Snatch.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A0890F522069D05E00300A53 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,19 +76,11 @@
 		A0FD653A208D78A900BA8F52 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A0FD653B208D78A900BA8F52 /* PropertyList */,
+				A0FD653C208D78A900BA8F52 /* iOS.plist */,
+				A0FD653D208D78A900BA8F52 /* macOS.plist */,
 				A0FD653E208D78A900BA8F52 /* SnatchOne */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		A0FD653B208D78A900BA8F52 /* PropertyList */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD653C208D78A900BA8F52 /* iOS.plist */,
-				A0FD653D208D78A900BA8F52 /* macOS.plist */,
-			);
-			path = PropertyList;
 			sourceTree = "<group>";
 		};
 		A0FD653E208D78A900BA8F52 /* SnatchOne */ = {
@@ -138,67 +94,11 @@
 			path = SnatchOne;
 			sourceTree = "<group>";
 		};
-		A0FD654F208D78A900BA8F52 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6550208D78A900BA8F52 /* LinuxMain.swift */,
-				A0FD6551208D78A900BA8F52 /* PropertyList */,
-				A0FD6553208D78A900BA8F52 /* SnatchOneTests */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		A0FD6551208D78A900BA8F52 /* PropertyList */ = {
-			isa = PBXGroup;
-			children = (
-				A00CA45E20C92550001371E8 /* SnatchOneTests.plist */,
-			);
-			path = PropertyList;
-			sourceTree = "<group>";
-		};
-		A0FD6553208D78A900BA8F52 /* SnatchOneTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6554208D78A900BA8F52 /* MethodTests */,
-				A0FD6557208D78A900BA8F52 /* EncodingTests */,
-				A0FD655A208D78A900BA8F52 /* GeneralTests.swift */,
-				A0FD655B208D78A900BA8F52 /* DecodingTests */,
-			);
-			path = SnatchOneTests;
-			sourceTree = "<group>";
-		};
-		A0FD6554208D78A900BA8F52 /* MethodTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6555208D78A900BA8F52 /* GetTests.swift */,
-				A0FD6556208D78A900BA8F52 /* PostTests.swift */,
-			);
-			path = MethodTests;
-			sourceTree = "<group>";
-		};
-		A0FD6557208D78A900BA8F52 /* EncodingTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD6558208D78A900BA8F52 /* URLQueryEncodingTests.swift */,
-				A0FD6559208D78A900BA8F52 /* JSONBodyEncodingTests.swift */,
-			);
-			path = EncodingTests;
-			sourceTree = "<group>";
-		};
-		A0FD655B208D78A900BA8F52 /* DecodingTests */ = {
-			isa = PBXGroup;
-			children = (
-				A0FD655C208D78A900BA8F52 /* Result+JsonTests.swift */,
-			);
-			path = DecodingTests;
-			sourceTree = "<group>";
-		};
 		OBJ_41 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				A09988812047B114008889F6 /* SnatchOne.framework */,
 				A0890F562069D05E00300A53 /* SnatchOne.framework */,
-				A00CA45A20C92550001371E8 /* SnatchOneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -211,7 +111,6 @@
 				A036A59920BE467800508F2B /* Package.swift */,
 				A036A59B20BE467900508F2B /* README.md */,
 				A0FD653A208D78A900BA8F52 /* Sources */,
-				A0FD654F208D78A900BA8F52 /* Tests */,
 				OBJ_41 /* Products */,
 				A09988892047B121008889F6 /* Frameworks */,
 			);
@@ -237,24 +136,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A00CA45920C92550001371E8 /* SnatchOneTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A00CA46220C92550001371E8 /* Build configuration list for PBXNativeTarget "SnatchOneTests" */;
-			buildPhases = (
-				A00CA45620C92550001371E8 /* Sources */,
-				A00CA45720C92550001371E8 /* Frameworks */,
-				A00CA45820C92550001371E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A00CA46120C92550001371E8 /* PBXTargetDependency */,
-			);
-			name = SnatchOneTests;
-			productName = SnatchOneTests;
-			productReference = A00CA45A20C92550001371E8 /* SnatchOneTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A0890F552069D05E00300A53 /* SnatchOne macOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0890F5B2069D05F00300A53 /* Build configuration list for PBXNativeTarget "SnatchOne macOS" */;
@@ -300,10 +181,6 @@
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				TargetAttributes = {
-					A00CA45920C92550001371E8 = {
-						CreatedOnToolsVersion = 9.3;
-						ProvisioningStyle = Automatic;
-					};
 					A0890F552069D05E00300A53 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -328,19 +205,11 @@
 			targets = (
 				A09988802047B114008889F6 /* SnatchOne */,
 				A0890F552069D05E00300A53 /* SnatchOne macOS */,
-				A00CA45920C92550001371E8 /* SnatchOneTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A00CA45820C92550001371E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A0890F542069D05E00300A53 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,19 +227,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A00CA45620C92550001371E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A00CA46820C92599001371E8 /* JSONBodyEncodingTests.swift in Sources */,
-				A00CA46720C92599001371E8 /* URLQueryEncodingTests.swift in Sources */,
-				A00CA46A20C92599001371E8 /* Result+JsonTests.swift in Sources */,
-				A00CA46520C92599001371E8 /* GetTests.swift in Sources */,
-				A00CA46620C92599001371E8 /* PostTests.swift in Sources */,
-				A00CA46920C92599001371E8 /* GeneralTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A0890F512069D05E00300A53 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,97 +251,7 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		A00CA46120C92550001371E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0890F552069D05E00300A53 /* SnatchOne macOS */;
-			targetProxy = A00CA46020C92550001371E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		A00CA46320C92550001371E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Tests/PropertyList/SnatchOneTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchOneTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Debug;
-		};
-		A00CA46420C92550001371E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				INFOPLIST_FILE = Tests/PropertyList/SnatchOneTests.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.github.isaac-weisberg.SnatchOneTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SUPPORTED_PLATFORMS = macosx;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
 		A0890F5C2069D05F00300A53 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PropertyList/macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -612,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PropertyList/macOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/macOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -683,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PropertyList/iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -751,7 +517,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = "$(SRCROOT)/Sources/PropertyList/iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -863,15 +629,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A00CA46220C92550001371E8 /* Build configuration list for PBXNativeTarget "SnatchOneTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A00CA46320C92550001371E8 /* Debug */,
-				A00CA46420C92550001371E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		A0890F5B2069D05F00300A53 /* Build configuration list for PBXNativeTarget "SnatchOne macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
