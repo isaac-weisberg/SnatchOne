@@ -1,8 +1,8 @@
-import Promise
-import Snatch
-import Foundation
+//import Promise
+//import Snatch
+//import Foundation
 
-public extension Snatch.Get {
+//public extension Snatch.Get {
     /**
      Starts a data task on a URLSession, resolves upon completion.
      
@@ -10,9 +10,9 @@ public extension Snatch.Get {
      
      - returns: Promise that fulfills with Snatch.Result object.
      */
-    public subscript(_ url: URL) -> Promise<Result> {
-        return self[ url, nil, nil ]
-    }
+//    public subscript(_ url: URL) -> Promise<Result> {
+//        return self[ url, nil, nil ]
+//    }
     
     /**
      Encodes parameters into the URL, overriding whatever query it was carrying and resolves upon completion of a request.
@@ -22,9 +22,9 @@ public extension Snatch.Get {
      
      - returns: Promise that fulfills with Snatch.Result object.
      */
-    public subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
-        return self [ url, params, nil ]
-    }
+//    public subscript(_ url: URL, _ params: [AnyHashable: Any]) -> Promise<Result> {
+//        return self [ url, params, nil ]
+//    }
     
     /**
      Encodes parameters if present into url and performs a request using them HTTP headers
@@ -35,15 +35,15 @@ public extension Snatch.Get {
      
      - returns: Promise that fulfills with Snatch.Result object.
      */
-    public subscript(_ url: URL, _ params: URLQueryEncoding.Parameters?, _ headers: [String: String]?) -> Promise<Result> {
-        let request: URLRequest
-        
-        do {
-            request = try generate(url, params, headers)
-        } catch {
-            return Promise(error: error)
-        }
-        
-        return father.request(request)
-    }
-}
+//    public subscript(_ url: URL, _ params: URLQueryEncoding.Parameters?, _ headers: [String: String]?) -> Promise<Result> {
+//        let request: URLRequest
+//
+//        do {
+//            request = try generate(url, params, headers)
+//        } catch {
+//            return Promise(error: error)
+//        }
+//
+//        return father.request(request)
+//    }
+//}

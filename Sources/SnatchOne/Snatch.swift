@@ -18,6 +18,29 @@ public extension Snatch {
         }
     }
     
+    public func get(_ url: URL, _ params: URLQueryEncoding.Parameters? = nil, _ headers: [String: String]? = nil) -> Promise<Result> {
+        let request: URLRequest
+        
+        do {
+            request = try get.generate(url, params, headers)
+        } catch {
+            return Promise(error: error)
+        }
+        
+        return self.request(request)
+    }
+    
+    public func post<Parameters: Encodable>(_ url: URL, _ parameters: Parameters? = nil, _ headers: [String: String]? = nil) -> Promise<Result> {
+        let request: URLRequest
+        do {
+            request = try post.generate(url, parameters, headers)
+        } catch {
+            return Promise(error: error)
+        }
+        
+        return self.request(request)
+    }
+    
     /**
      Returns a generalized handler that is to be used for conditional promise resolvation upon all the URLRequests finish.
      
