@@ -12,12 +12,8 @@
 		A0890F6A2069D34300300A53 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F692069D34300300A53 /* Promise.framework */; };
 		A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
 		A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
-		A0FD655F208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
-		A0FD6560208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
 		A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
-		A0FD6569208D78C000BA8F52 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6543208D78A900BA8F52 /* Post.swift */; };
-		A0FD656A208D78C000BA8F52 /* Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6544208D78A900BA8F52 /* Get.swift */; };
 		A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +31,6 @@
 		A0FD653C208D78A900BA8F52 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A0FD653D208D78A900BA8F52 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		A0FD6541208D78A900BA8F52 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
-		A0FD6543208D78A900BA8F52 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		A0FD6544208D78A900BA8F52 /* Get.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Get.swift; sourceTree = "<group>"; };
 		A0FD6546208D78A900BA8F52 /* Snatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A0FD6546208D78A900BA8F52 /* Snatch.swift */,
-				A0FD6543208D78A900BA8F52 /* Post.swift */,
-				A0FD6544208D78A900BA8F52 /* Get.swift */,
 				A0FD6541208D78A900BA8F52 /* Result+Json.swift */,
 			);
 			path = SnatchOne;
@@ -231,8 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FD656A208D78C000BA8F52 /* Get.swift in Sources */,
-				A0FD6569208D78C000BA8F52 /* Post.swift in Sources */,
 				A0FD656B208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */,
 			);
@@ -242,8 +232,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0FD6560208D78C000BA8F52 /* Get.swift in Sources */,
-				A0FD655F208D78C000BA8F52 /* Post.swift in Sources */,
 				A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */,
 				A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */,
 			);
