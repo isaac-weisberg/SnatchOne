@@ -15,10 +15,10 @@
 		A047A4C720DCE2CD00D4E4A8 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
 		A047A4D720DCE57300D4E4A8 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
 		A047A4D820DCE57300D4E4A8 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
-		A047A4D920DCE8E800D4E4A8 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
-		A047A4DA20DCE8EC00D4E4A8 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F692069D34300300A53 /* Promise.framework */; };
 		A0890F6A2069D34300300A53 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0890F692069D34300300A53 /* Promise.framework */; };
 		A0A86C07204E9DE3004DD232 /* Promise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A86C06204E9DE3004DD232 /* Promise.framework */; };
+		A0CCA97C20DCF7E600ABD5D5 /* libPromises-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CCA97B20DCF7E600ABD5D5 /* libPromises-macOS.a */; };
+		A0CCA97E20DCF7EC00ABD5D5 /* libPromises-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0CCA97D20DCF7EC00ABD5D5 /* libPromises-iOS.a */; };
 		A0FD655E208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
 		A0FD6561208D78C000BA8F52 /* Snatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6546208D78A900BA8F52 /* Snatch.swift */; };
 		A0FD6568208D78C000BA8F52 /* Result+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FD6541208D78A900BA8F52 /* Result+Json.swift */; };
@@ -49,12 +49,14 @@
 		A036A59B20BE467900508F2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A036A59C20BE467900508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A047A4BF20DCE2C600D4E4A8 /* libSnatchOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSnatchOne.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A047A4C820DCE32700D4E4A8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; };
+		A047A4C820DCE32700D4E4A8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A047A4CE20DCE53200D4E4A8 /* libSnatchOne.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSnatchOne.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0890F562069D05E00300A53 /* SnatchOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0890F692069D34300300A53 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/Mac/Promise.framework; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* SnatchOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
+		A0CCA97B20DCF7E600ABD5D5 /* libPromises-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPromises-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CCA97D20DCF7EC00ABD5D5 /* libPromises-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPromises-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FD653C208D78A900BA8F52 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A0FD653D208D78A900BA8F52 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		A0FD6541208D78A900BA8F52 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
@@ -68,8 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A047A4D920DCE8E800D4E4A8 /* Promise.framework in Frameworks */,
 				5123465A234547F5BA978872 /* libPods-SnatchOne Static.a in Frameworks */,
+				A0CCA97E20DCF7EC00ABD5D5 /* libPromises-iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,8 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A047A4DA20DCE8EC00D4E4A8 /* Promise.framework in Frameworks */,
 				49738D0E3E741D6A4B8C3271 /* libPods-SnatchOne macOS Static.a in Frameworks */,
+				A0CCA97C20DCF7E600ABD5D5 /* libPromises-macOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				A00CA45220C92411001371E8 /* Snatch.framework */,
+				A0CCA97D20DCF7EC00ABD5D5 /* libPromises-iOS.a */,
+				A0CCA97B20DCF7E600ABD5D5 /* libPromises-macOS.a */,
 				A00CA45420C9241A001371E8 /* Snatch.framework */,
 				A0A86C06204E9DE3004DD232 /* Promise.framework */,
 				A0890F692069D34300300A53 /* Promise.framework */,
@@ -528,7 +532,7 @@
 				);
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				PRODUCT_NAME = SnatchOne;
 				SDKROOT = macosx;
@@ -566,7 +570,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SnatchOne;
 				SDKROOT = macosx;
