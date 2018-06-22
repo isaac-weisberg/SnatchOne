@@ -57,6 +57,7 @@
 		A0A86C06204E9DE3004DD232 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/iOS/Promise.framework; sourceTree = "<group>"; };
 		A0CCA97B20DCF7E600ABD5D5 /* libPromises-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPromises-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CCA97D20DCF7EC00ABD5D5 /* libPromises-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPromises-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0CCA97F20DCF85300ABD5D5 /* SnatchOne.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SnatchOne.podspec; sourceTree = "<group>"; };
 		A0FD653C208D78A900BA8F52 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A0FD653D208D78A900BA8F52 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		A0FD6541208D78A900BA8F52 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				A0CCA97F20DCF85300ABD5D5 /* SnatchOne.podspec */,
 				A047A4C820DCE32700D4E4A8 /* Podfile */,
 				A036A59C20BE467900508F2B /* .gitignore */,
 				A036A59A20BE467900508F2B /* Cartfile */,
