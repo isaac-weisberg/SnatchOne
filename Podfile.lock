@@ -1,0 +1,16 @@
+PODS:
+  - Snatch (4.0.5)
+
+DEPENDENCIES:
+  - Snatch (~> 4.0)
+
+SPEC REPOS:
+  "git@github.com:isaac-weisberg/isaacs-specs.git":
+    - Snatch
+
+SPEC CHECKSUMS:
+  Snatch: 0f7c98b3df06571de161fb166d40dce2ab6b29b2
+
+PODFILE CHECKSUM: f048eadbe71ac4fc451ea781bd0a7f1cc0cba3f9
+
+COCOAPODS: 1.5.3
