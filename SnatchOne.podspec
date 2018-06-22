@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+                        SnatchOne is a promises wrapper around Snatch.
                    DESC
 
   s.homepage     = "http://EXAMPLE/SnatchOne"
@@ -80,6 +81,7 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "git@github.com:isaac-weisberg/SnatchOne.git", :tag => "#{s.version}" }
+  s.swift_version = "4.0"
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
