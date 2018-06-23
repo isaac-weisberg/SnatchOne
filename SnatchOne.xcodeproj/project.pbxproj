@@ -25,11 +25,9 @@
 		A036A59A20BE467900508F2B /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		A036A59B20BE467900508F2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A036A59C20BE467900508F2B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		A047A4C820DCE32700D4E4A8 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0890F562069D05E00300A53 /* SnatchOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0890F692069D34300300A53 /* Promise.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Promise.framework; path = Carthage/Build/Mac/Promise.framework; sourceTree = "<group>"; };
 		A09988812047B114008889F6 /* SnatchOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SnatchOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0CCA97F20DCF85300ABD5D5 /* SnatchOne.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SnatchOne.podspec; sourceTree = "<group>"; };
 		A0FD653C208D78A900BA8F52 /* iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = iOS.plist; sourceTree = "<group>"; };
 		A0FD653D208D78A900BA8F52 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		A0FD6541208D78A900BA8F52 /* Result+Json.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Result+Json.swift"; sourceTree = "<group>"; };
@@ -100,8 +98,6 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				A0CCA97F20DCF85300ABD5D5 /* SnatchOne.podspec */,
-				A047A4C820DCE32700D4E4A8 /* Podfile */,
 				A036A59C20BE467900508F2B /* .gitignore */,
 				A036A59A20BE467900508F2B /* Cartfile */,
 				A036A59920BE467800508F2B /* Package.swift */,
