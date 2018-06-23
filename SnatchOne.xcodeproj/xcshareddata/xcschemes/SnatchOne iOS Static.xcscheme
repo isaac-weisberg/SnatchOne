@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09988802047B114008889F6"
-               BuildableName = "SnatchOne.framework"
-               BlueprintName = "SnatchOne"
+               BuildableName = "SnatchOne_iOS_Static.framework"
+               BlueprintName = "SnatchOne iOS Static"
                ReferencedContainer = "container:SnatchOne.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09988802047B114008889F6"
-            BuildableName = "SnatchOne.framework"
-            BlueprintName = "SnatchOne"
+            BuildableName = "SnatchOne_iOS_Static.framework"
+            BlueprintName = "SnatchOne iOS Static"
             ReferencedContainer = "container:SnatchOne.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09988802047B114008889F6"
-            BuildableName = "SnatchOne.framework"
-            BlueprintName = "SnatchOne"
+            BuildableName = "SnatchOne_iOS_Static.framework"
+            BlueprintName = "SnatchOne iOS Static"
             ReferencedContainer = "container:SnatchOne.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
